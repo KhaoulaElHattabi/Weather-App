@@ -55,16 +55,52 @@ body{
     width: 50px;
     height: 50px;
     color: #06283D;
-    background:#dff6ff;
+    background: #dff6ff;
     border-radius: 50%;
     font-size: 22px;
     transition: 0.4s ease;
 }
 
+.search-box button:hover{
+    color: #fff;
+    background: #06283D;
+}
+
 .search-box i{
     position: absolute;
-    color:#06283D;
+    color: #06283D;
     font-size: 28px;
+}
+
+.weather-box{
+    text-align: center;
+}
+
+.weather-box img{
+    width: 60%;
+    margin-top: 30px;
+}
+
+.weather-box .temperature{
+    position: relative;
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -16px;
+}
+
+.weather-box .temperature span{
+    position: absolute;
+    margin-left: 4px;
+    font-size: 1.5rem;
+}
+
+.weather-box .description{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .weather-details{
@@ -91,15 +127,14 @@ body{
     justify-content: flex-end;
 }
 
-
-.weather-details i {
+.weather-details i{
     color: #06283D;
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
-.weather-details span {
+.weather-details span{
     color: #06283D;
     font-size: 22px;
     font-weight: 500;
@@ -115,7 +150,7 @@ body{
     width: 100%;
     text-align: center;
     margin-top: 50px;
-    scale:0;
+    scale: 0;
     opacity: 0;
     display: none;
 }
@@ -131,36 +166,9 @@ body{
     margin-top: 12px;
 }
 
-.weather-box img{
-    width: 60%;
-    margin-top: 30px;
-}
-
-.weather-box .weather-details{
+.weather-box, .weather-details{
     scale: 0;
     opacity: 0;
-}
-
-.weather-box .temperature{
-    position: relative;
-    color:#06283D;
-    font-size: 4rem;
-    font-weight: 800;
-    margin-top: 30px;
-    margin-left: -16px
-}
-
-.weather-box .temperature span{
-    position: absolute;
-    margin-left: 4px;
-    font-size: 1.5rem;
-}
-
-.weather-box .desription{
-    color: #06283D;
-    font-size: 22px;
-    font-weight: 500;
-    text-transform: capitalize;
 }
 
 .fadeIn{
