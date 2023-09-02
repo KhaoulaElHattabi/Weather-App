@@ -11,12 +11,12 @@ pipeline {
        stage('test') {
             steps {
                 // Add your build steps here
+                 echo 'testing the application'
             }
         }
        stage('deploy') {
             steps {
-                // Add your build steps here
-            }
+                 echo 'deploying the application'            }
         }
     }
 }
